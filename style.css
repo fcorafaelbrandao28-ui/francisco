@@ -1,12 +1,12 @@
 body{background-color: black;}
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 header{padding: 32px;
-border-bottom: 1px solid #333;
+border-bottom: 1px solid var(--subcor);
 background-color: rgba(red, green, blue, alpha);
 }
-header div {text-align: center;/*alinhamento no meio do header*/
+.links{text-align: center;/*alinhamento no meio do header*/
 }
-header div a {
+.links a{
 color:antiquewhite; /*a cor do texto*/
 font-size: 20px;/*tamanho da fonte*/
 line-height: 30px;/*espaçamento da linha do texto*/
@@ -14,11 +14,53 @@ margin: 0 16px;/*espaçamento entre os textos*/
 text-decoration: none;/*retirar decoração do texto*/
 font-family: ´Roboto´, sans-serif;/*fonte escolhida para o menu*/
 }
-header div a:hover { /*seleção do modo quando o mouse passar por cima "hover"*/
-color: green;/*mudar para cor verde*/
+.links a:hover { /*seleção do modo quando o mouse passar por cima "hover"*/
+color: #57a615; /*mudar para cor verde*/
 transition: color 700ms; /*e fazer uma transição de cor que dura 700ms*/
 }
 *{margin: 0;
  padding: 0;
  border: 0;
  }
+#box{
+text-align: center; /*alinhamento do conteúdo no meio do body*/
+padding: 32px; /*distancia dos outros elementos*/
+}
+#box img{
+border-radius: 50%; /* adiciona uma borda redonda a imagem*/
+border: 5px solid #6e0342; /*adiciona uma cor a borda da imagem*/
+margin-bottom: 3px;/* distancia da margem inferior dos outros elementos*/
+}
+#box h1{
+font-size: 42px; /*tamanho da fonte*/
+line-height: 52px;/*espaçamento da linha do texto*/
+font-weight: bold; /*tipo de fonte*/
+}
+#box h2{
+font-size: 24px; /*tamanho da fonte*/
+line-height: 34px; /*espaçamento da linha do texto*/
+font-weight: normal; /*tipo de fonte*/
+margin-top: 8px; /*distancia da margem superior dos outros elementos*/
+opacity: 0.8; /*transparência do elemento*/
+}
+:root{ /*iniciando variavel*/
+--subcor: #57a615; /*nomeando a variavel de --subcor e guardando uma cor nela*/
+} /*fechando o bloco da variavel root*/
+#box h1 {
+padding: 4px;
+}
+#box h2 {
+padding: 10px;
+}
+#box a {
+color: var(--subcor);
+transition: 600ms;
+}
+#linksfooter { 
+padding-top: 32px;
+}
+#linksfooter a { 
+padding-top: 32px;
+padding-bottom: 8px;
+border-bottom: 3px solid var(--subcor);
+}
