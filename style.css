@@ -49,9 +49,36 @@ font-weight: bold;/* tipo da fonte */
 }
 
 #box h2{
-font-size: 24px;/* tamanho da fonte */
-line-height: 34px;/* espaçamento da linha do texto */
-font-weight: normal;  /* tipo da fonte */
-margin-top: 8px;/*distancia da margem superior dos outros elementos*/
-opacity: 0,8;  /* transparência do elemento */
+font-size: 24px; /*tamanho da fonte*/
+line-height: 34px; /*espaçamento da linha do texto*/
+font-weight: normal; /*tipo de fonte*/
+margin-top: 8px; /*distancia da margem superior dos outros elementos*/
+opacity: 0.8; /*transparência do elemento*/
+}
+
+:root{ /*iniciando variavel*/
+--subcor: #57a615; /*nomeando a variavel de --subcor e guardando uma cor nela*/
+} /*fechando o bloco da variavel root*/
+
+#box h1 {
+padding: 4px;
+}
+
+#box h2 {
+padding: 10px;
+}
+
+#box a {
+color: var(--subcor);
+transition: 600ms;
+}
+
+#linksfooter { 
+padding-top: 32px;
+}
+
+#linksfooter a { 
+padding-top: 32px;
+padding-bottom: 8px;
+border-bottom: 3px solid var(--subcor);
 }
