@@ -1,0 +1,17 @@
+const prompt = require('prompt-sync')();
+const fs = require('fs');
+
+let dados = fs.readFileSync('dados.json', 'utf-8');
+let usuarios = JSON.parse(dados);
+
+const nome = prompt("digite o nome : ");
+const idade = parseInt(prompt("digite a idade:]"));
+
+const novoUsuario = {
+ nome,
+ idade
+};
+ usuarios.push(novoUsuario);
+ fs.writeFileSync('dados.json',JSON.stringify(usuarios, null,2));
+
+ console.log("usuario cadastrado com sucesso!");
